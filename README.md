@@ -157,7 +157,3 @@ Developed with Python 3.13 (Google Colab). The pickled model must be loaded with
 - **Version used:** [German Credit Risk - With Target](https://www.kaggle.com/datasets/kabure/german-credit-data-with-risk) on Kaggle (user `kabure`),
   a reduced version with 9 of the original 20 attributes plus the `Risk` label. License shown on the Kaggle page:
   [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/).
-
-## Author
-
-TODO: name, GitHub and LinkedIn links.
