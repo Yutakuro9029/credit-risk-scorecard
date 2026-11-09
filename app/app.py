@@ -4,7 +4,11 @@ import pandas as pd
 import joblib
 
 # Scorecard artifact from Phase 2 (optbinning Scorecard + scaling + cut-off)
-artifact = joblib.load("credit_scorecard.pkl")
+from pathlib import Path
+# Resolve the model path relative to this file, so the app works from any working directory
+MODEL_PATH = Path(__file__).resolve().parent / "credit_scorecard.pkl"
+artifact = joblib.load(MODEL_PATH)
+
 scorecard = artifact["scorecard"]
 cutoff = artifact["cost_cutoff"]
 scaling = artifact["scaling"]
