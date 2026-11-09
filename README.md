@@ -49,7 +49,8 @@ Main findings:
 │   └── 03_explainability_fairness.ipynb     # Phase 3
 ├── app/
 │   ├── app.py                               # Streamlit scorecard app
-│   └── credit_scorecard.pkl                 # final champion (created by notebook 03)
+│   ├── credit_scorecard.pkl                 # final champion (created by notebook 03)
+│   └── requirements.txt                     # app-only dependencies (deployment)
 ├── requirements.txt
 └── README.md
 ```
@@ -129,10 +130,16 @@ methods in the US Regulation B commentary (comment 9(b)(2)-5). The app uses the 
 
 ## Run it
 
+## Run it
+
 ```bash
+# Notebooks
 pip install -r requirements.txt
 # Run notebooks/01-03 in order (they download the data with kagglehub);
 # notebook 03 writes credit_scorecard.pkl - copy it into app/
+
+# App only
+pip install -r app/requirements.txt
 cd app
 python -m streamlit run app.py
 ```
