@@ -12,6 +12,10 @@ applicant and explains a decline.
 
 **Final model:** WoE logistic scorecard, 6 variables, no `Sex` or `Age`. Score: 600 points at 50:1 good:bad odds, 20 points to double the odds.
 
+## Live Demo
+
+You can try it here: https://phuminan-credit-risk-scorecard.streamlit.app
+
 ## Key results
 
 All numbers come from the notebooks in this repository (5-fold stratified CV on 800 training rows; 200-row held-out test set, used only for confirmation).
